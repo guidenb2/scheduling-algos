@@ -1,6 +1,7 @@
 import sys
 from schedule_fcfs import fcsf
 from schedule_sjf import sjf
+from schedule_priority import priority
 
 def reader(file):
    tasks = []
@@ -19,6 +20,7 @@ def main():
    tasks = reader(file)
    fcsf(tasks)
    sjf(tasks)
+   priority(tasks)
 
 if __name__ == "__main__":
    main()
