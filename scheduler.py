@@ -1,5 +1,6 @@
 import sys
 from schedule_fcfs import fcsf
+from schedule_sjf import sjf
 
 def reader(file):
    tasks = []
