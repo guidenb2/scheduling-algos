@@ -18,6 +18,7 @@ def main():
    file = sys.argv[1]
    tasks = reader(file)
    fcsf(tasks)
+   sjf(tasks)
 
 if __name__ == "__main__":
    main()
