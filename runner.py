@@ -1,6 +1,6 @@
-def run(tasks):
+def run(tasks, algo):
    waitTimes = []
-   print("+--------------------------------------+\n| {:^36} |".format("First Come First Serve"))
+   print("+--------------------------------------+\n| {:^36} |".format(algo))
    print("+------------+------------+------------+")
    print("| {:^10} | {:^10} | {:^10} |".format("Name", "Priority", "Burst Time"))
    print("+------------+------------+------------+")
@@ -11,5 +11,5 @@ def run(tasks):
       waitTimes.append(waitTimes[i - 1] + tasks[i - 1][2])
       print("| {:^10} | {:^10} | {:^10} |".format(task[0], task[1], task[2]))
    print("+------------+------------+------------+\n| Average Waiting Time: {:<14} |".format(sum(waitTimes) / len(tasks)))
-   print("+------------+------------+------------+")
+   print("+------------+------------+------------+\n")
    return
