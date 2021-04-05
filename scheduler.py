@@ -22,7 +22,7 @@ def main():
    fcsf(tasks)
    sjf(tasks)
    priority(tasks)
-   #round_robin(tasks)
+   round_robin(tasks)
 
 if __name__ == "__main__":
    main()
