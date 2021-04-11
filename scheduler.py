@@ -1,3 +1,9 @@
+# Name: Ben Guiden
+# Student Number: 19310046
+#
+# I am aware of and acknowledge the DCU integrity policy and I confirm that all work presented is my own.
+#
+
 import sys
 from schedule_fcfs import fcsf
 from schedule_sjf import sjf
@@ -13,7 +19,7 @@ def reader(file):
          tokens = line.split(",")
          tasks.append((tokens[0].strip(), int(tokens[1].strip()), int(tokens[2].strip())))
    except:
-      print("The file {} does not exist".format(file))
+      sys.exit("The file {} does not exist".format(file))
    return tasks
 
 def main():
