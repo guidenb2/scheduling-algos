@@ -7,5 +7,5 @@
 from runner import run
 
 def fcsf(tasks):
-   run(tasks, "First Come First Serve")
+   run(tasks, "First Come First Serve")   # call the run function
    return

@@ -7,10 +7,10 @@
 from runner import run
 
 def burst_time(task):
-   return task[2]
+   return task[2] # returns the last item of a tuple
 
 def sjf(tasks):
-   nl = sorted(tasks, key=burst_time)
-   run(nl, "Shortest Job First")
+   nl = sorted(tasks, key=burst_time)  # sort the tasks list on the last item of the tuple
+   run(nl, "Shortest Job First") # call the run function
    return
    
