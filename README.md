@@ -1,5 +1,9 @@
 ## CA216 CPU Scheduling
 
+All algroithms are run by the program.
+The program is run with scheduler.py. The commandline argument is a test file.
+To run: python scheduler.py FILENAME.txt
+
 Name: Ben Guiden
 Student Number: 19310046
 
